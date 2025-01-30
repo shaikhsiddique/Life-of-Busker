@@ -228,10 +228,6 @@ const page5Animation = () => {
 
 
 
-let audio = new Audio('./Assets/music.mp3');
-
-// audio.play();
-
 page1Animation();
 page3Animation();
 page4Animation();

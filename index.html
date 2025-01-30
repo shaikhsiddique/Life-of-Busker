@@ -161,7 +161,7 @@
         </div>
     </div>
 
-    <div class="page5 h-[100vh] w-screen relative flex mt-[120px] justify-evenly gap-10">
+    <div class="page5 h-[60vh] w-screen relative flex mt-[120px] justify-evenly gap-10 ">
      
         <div id="card1" class="card relative  ">
           <div class="title flex flex-col items-center justify-center my-4 text-center pb-4">
@@ -206,9 +206,112 @@
     </div>
     
     <div  data-scroll
-    data-scroll-speed="1.5" class="page6 h-screen w-screen bg-cover relative" style="background-image: url('./Assets/poster.jpg');">
+    data-scroll-speed="3.5" 
+    data-scroll-direction="vertical"
+    class="page6 h-screen w-screen bg-cover relative z-50" style="background-image: url('./Assets/poster.jpg');">
       <img class="absolute top-[25%] left-[38%] h-12" src="https://cdn.prod.website-files.com/63f5c044aee9c9d252e817cc/642487559ec1b9c947460e3f_nav-logo.svg" alt="">
     </div>
+    <div class="footer flex flex-col justify-between md:flex-row h-[100vh] w-full bg-[#ffffff] p-8 overflow-hidden">
+      <div class="part1 w-[45%]  h-full space-y-4 flex  flex-col justify-between p-20">
+        <div>
+          <h3 class="text-2xl font-bold">CONTACT & BOOKING</h3>
+        <h5 class="text-3xl font-normal tracking-tight my-6">
+          We perform at festivals, events, and private parties such as weddings, birthdays, or any special day.
+        </h5>
+        <p class="text-gray-700 my-6">
+          Please fill out the form below for booking inquiries or contact us via email if you have any questions.
+        </p>
+        </div>
+        <div class="flex flex-col gap-1">
+          <h3 class="text-md font-semibold">Email</h3>
+          <p  class="text-black hover:opacity-100 hover:underline opacity-70">Contact@lifeofabusker.dk</p>
+
+          <h3 class="text-md font-semibold">Social</h3>
+          <div class="flex gap-1">
+          <a href="https://www.instagram.com/lifeofabusker/" target="_blank" rel="noopener noreferrer" class="text-black hover:opacity-100 hover:underline opacity-70">
+            Instagram
+          </a>
+          <a href="https://www.tiktok.com/@lifeofabusker" target="_blank" rel="noopener noreferrer" class="text-black hover:opacity-100 hover:underline opacity-70">
+            TikTok
+          </a>
+          <a href="https://open.spotify.com/artist/lifeofabusker" target="_blank" rel="noopener noreferrer" class="text-black hover:opacity-100 hover:underline opacity-70">
+            Spotify
+          </a>
+          <a href="https://www.youtube.com/lifeofabusker" target="_blank" rel="noopener noreferrer" class="text-black hover:opacity-100 hover:underline opacity-70">
+            YouTube
+          </a>
+          <a href="https://www.facebook.com/lifeofabusker" target="_blank" rel="noopener noreferrer" class="text-black hover:opacity-100 hover:underline opacity-70">
+            Facebook
+          </a>
+          </div>
+          <h3 class="text-md font-semibold">© 2025</h3>
+        </div>
+      </div>
+    
+      <div class="part2 w-[55%]  h-full flex flex-col justify-center p-24">
+        <div class="form w-full space-y-6">
+          
+          <!-- Full Name -->
+          <div class="flex items-center gap-3 border-b-2 border-black pb-2">
+            <div class="rounded-full w-6 h-5 border-2 border-black transition-colors duration-300 focus-within:bg-black"></div>
+            <label class="text-xl font-medium w-32">Full Name</label>
+            <input type="text" placeholder="Enter full name" 
+              class="outline-none border-none text-black text-xl px-2 py-1 w-full placeholder:text-gray-700 placeholder:opacity-80 focus:ring-0"/>
+          </div>
+    
+          <!-- Email -->
+          <div class="flex items-center gap-3 border-b-2 border-black pb-2">
+            <div class="rounded-full w-6 h-5 border-2 border-black transition-colors duration-300 focus-within:bg-black"></div>
+            <label class="text-xl font-medium w-32">Email</label>
+            <input type="email" placeholder="Enter email" 
+              class="outline-none border-none text-black text-xl px-2 py-1 w-full placeholder:text-gray-700 placeholder:opacity-80 focus:ring-0"/>
+          </div>
+    
+          <!-- Date -->
+          <div class="flex items-center gap-3 border-b-2 border-black pb-2">
+            <div class="rounded-full w-6 h-5 border-2 border-black transition-colors duration-300 focus-within:bg-black"></div>
+            <label class="text-xl font-medium w-32">Date</label>
+            <input type="date" 
+              class="outline-none border-none text-black text-xl px-2 py-1 w-full focus:ring-0"/>
+          </div>
+    
+          <!-- Time -->
+          <div class="flex items-center gap-3 border-b-2 border-black pb-2">
+            <div class="rounded-full w-6 h-5 border-2 border-black transition-colors duration-300 focus-within:bg-black"></div>
+            <label class="text-xl font-medium w-32">Time</label>
+            <input type="time" 
+              class="outline-none border-none text-black text-xl px-2 py-1 w-full focus:ring-0"/>
+          </div>
+    
+          <!-- Location -->
+          <div class="flex items-center gap-3 border-b-2 border-black pb-2">
+            <div class="rounded-full w-6 h-5 border-2 border-black transition-colors duration-300 focus-within:bg-black"></div>
+            <label class="text-xl font-medium w-32">Location</label>
+            <input type="text" placeholder="Enter event location" 
+              class="outline-none border-none text-black text-xl px-2 py-1 w-full placeholder:text-gray-700 placeholder:opacity-80 focus:ring-0"/>
+          </div>
+    
+          <!-- Message -->
+          <div class="flex flex-col gap-2 border-b-2 border-black pb-2">
+            <div class="flex items-center gap-3">
+              <div class="rounded-full w-5 h-5 border-2 border-black transition-colors duration-300 focus-within:bg-black"></div>
+              <label class="text-xl font-medium w-32">Message</label>
+            </div>
+            <textarea placeholder="Write your message here..." rows="4"
+              class="outline-none border-none text-black text-xl px-2 py-1 w-full placeholder:text-gray-700 placeholder:opacity-80 focus:ring-0 resize-none"></textarea>
+          </div>
+    
+          <!-- Submit Button -->
+          <div class="flex justify-center mt-6">
+            <button class="bg-black text-white text-xl font-semibold py-2 px-6 rounded-lg transition hover:bg-gray-900">
+              Submit
+            </button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
     </div>
 
     <!-- GSAP and ScrollTrigger -->
