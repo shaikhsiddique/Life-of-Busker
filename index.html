@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Locomotive Scroll CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      id="navbar"
+      class="nav px-6 py-2 fixed top-0 left-0 w-full z-50 flex justify-between"
+    >
+      <div class="nav-left flex flex-col gap-[6px] items-start">
+        <img
+          src="https://cdn.prod.website-files.com/63f5c044aee9c9d252e817cc/642487559ec1b9c947460e3f_nav-logo.svg"
+          loading="lazy"
+          alt="Life of a Busker - logo"
+          class="nav-logo-image h-7"
+        />
+        <div
+          class="flex gap-0.5 text-[#f2f0eeb3] font-extralight leading-[1.5] tracking-[-1px] opacity-90 text-[16px] font-[neue-haas-grotesk-display,sans-serif]"
+        >
+          <h4 class="hover:opacity-100 hover:underline">Music,</h4>
+          <h4 class="hover:opacity-100 hover:underline">Videos,</h4>
+          <h4 class="hover:opacity-100 hover:underline">About us,</h4>
+          <h4 class="hover:opacity-100 hover:underline">Contact</h4>
+        </div>
+      </div>
+
+      <div class="nav-right flex items-center gap-4">
+        <div
+          class="language-parent border-2 rounded-l-full rounded-r-full px-4 py-1 flex items-center gap-1"
+        >
+          <a href="/" class="language-link unactive inline-block">
+            <div class="text-[#f2f0eeb3] opacity-90">DK</div>
+          </a>
+          <div class="language-link">-</div>
+          <a
+            href="/en"
+            aria-current="page"
+            class="language-link inline-block font-bold"
+          >
+            <div class="text-white">EN</div>
+          </a>
+        </div>
+        <div class="menu-button menu-toggle">
+          <div class="text-white cursor-pointer text-xl font-semibold mb-1">
+            MENU
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body select-none" data-scroll-container>
+      <div
+        class="page1 w-screen h-screen bg-cover bg-center bg-no-repeat relative overflow-hidden"
+        style="
+          background-image: url('https://cdn.prod.website-files.com/63f5c044aee9c9d252e817cc/6400ffbd64997420d5be172e_home-hero-bg-p-1080.jpg');
+        "
+       
+      >
+        <h1 id="hero-text1"
+          class="absolute overflow-hidden bottom-40 text-white text-[105px] font-[300] tracking-[-4px] leading-[1.5] right-8"
+          data-scroll
+          data-scroll-speed="1.5"
+          data-scroll-direction="horizontal"
+        >
+          NEW SINGLE - MADE OF STONE
+        </h1>
+        <h1
+          id="hero-text2"
+          class="absolute overflow-hidden bottom-0 text-white text-[150px] font-[500] tracking-[-4px] leading-[1.5] left-10"
+          data-scroll
+          data-scroll-speed="-1.5"
+          data-scroll-direction="horizontal"
+          style="transform: translateX(-100%);"
+        >
+          OUT NOW
+        </h1>
+        <div id="screen1" class="absolute h-full w-full bg-[#29221D] flex items-center justify-center z-30">
+            <img src="https://cdn.prod.website-files.com/63f5c044aee9c9d252e817cc/642487559ec1b9c947460e3f_nav-logo.svg" alt="">
+        </div>
+        <div id="screen2" class="absolute h-full w-full bg-white opacity-30 flex items-center justify-center z-20">
+        </div>
+      </div>
+
+      
+        <div   class="h-[110vh] bg-[#29221D] relative overflow-x-auto overflow-y-hidden"
+         >
+        <div     class="absolute top-[-15%] whitespace-nowrap">
+          <h2 class="text-[650px] text-white">LIFE OF A BUSKER</h2>
+        </div>
+        <div  class="h-60 w-[370px] absolute bottom-4 left-[70%]">
+          <video class="w-full h-full" autoplay muted loop>
+            <source src="./Assets/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div  class="h-60 w-[370px] absolute top-4 left-[140%]">
+          <video class="w-full h-full" autoplay muted loop>
+            <source src="./Assets/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div  class="h-60 w-[370px] absolute bottom-4 left-[200%]">
+          <video class="w-full h-full" autoplay muted loop>
+            <source src="./Assets/video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div  class="h-60 w-[370px] absolute top-4 left-[280%]">
+          <video class="w-full h-full" autoplay muted loop>
+            <source src="./Assets/video4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      
+
+      <div class="page3 h-[110vh] w-screen bg-[#F0EDEB] relative">
+       <div class="absolute inset-0 text text-[#2F2823] flex flex-col justify-center items-center text-[60px]  tracking-[-4px] leading-[1.5]">
+        <h1>Since 2018, streets of the world have been filled</h1>
+        <h1>with our music, stories, hopes and dreams.</h1>
+        <h1>We are Life of a Busker.</h1>
+       </div>
+      </div>
+
+      <div class="page4 h-[100vh] w-screen relative text-[#ffffff] bg-cover overflow-hidden" >
+        <div class="w-full h-[35%] border-b-2 border-white relative z-20">
+            <h3 class="text-2xl font-semibold absolute bottom-[20%] left-8">2024</h3>
+            <h1 id="hover-text1" class="text-[145px] font-normal tracking-[-10px] leading-[1.3] absolute bottom-[10%] right-12 z-30">Made of Stone</h1>
+        </div>
+        <div class="w-full h-[30%] border-b-2 border-white relative z-20">
+            <h3 class="text-2xl font-semibold absolute bottom-[20%] right-8 ">2024</h3>
+            <h1 id="hover-text2" class=" text-[145px] font-normal tracking-[-10px] leading-[1.3] absolute bottom-[10%] left-12 z-30">Sense</h1>
+        </div>
+        <div class="w-full h-[35%] border-white relative z-20">
+            <h3 class="text-2xl font-semibold absolute bottom-[20%] left-8">2024</h3>
+            <h1 id="hover-text3" class="text-[145px] font-normal tracking-[-10px] leading-[1.3] absolute bottom-[10%] right-12 z-30">Hated Your Guts</h1>
+        </div>
+        <div class=" w-full h-[35%]  absolute  top-0 left-0 overflow-hidden ">
+          <div class="shade w-full h-full bg-[#29221D] ">
+          </div>
+        </div>
+        <div class="w-full h-[30%]  absolute  top-[35%] left-0 overflow-hidden">
+          <div class="shade w-full h-full bg-[#29221D] ">
+          </div>
+        </div>
+        <div class=" w-full h-[35%]  absolute  top-[65%] left-0 overflow-hidden">
+          <div class="shade w-full h-full bg-[#29221D] ">
+          </div>
+        </div>
+    </div>
+
+    <div class="page5 h-[100vh] w-screen relative flex mt-[120px] justify-evenly gap-10">
+     
+        <div id="card1" class="card relative  ">
+          <div class="title flex flex-col items-center justify-center my-4 text-center pb-4">
+            <h2 class="text-xl">OUR MUSIC</h2>
+            <h2 class="text-2xl font-semibold">LISTEN TO OUR</h2>
+            <h2 class="text-2xl -mt-2 font-semibold">ORIGINAL SONGS</h2>
+          </div>
+          <div id="img1" class="img h-96 w-[300px] bg-cover absolute -left-[30%]" style="background-image: url('./Assets/card1.png');"></div>
+          <div id="img2" class="img h-96 w-[300px] bg-cover absolute -left-[30%]" style="background-image: url('./Assets/card1b.png');"></div>
+          <div id="img3" class="img h-96 w-[300px] bg-cover absolute -left-[30%]" style="background-image: url('./Assets/card1c.png');"></div>
+          <div class="img h-96 w-[300px] bg-cover absolute -left-[30%]" style="background-image: url('./Assets/card1.png');"></div>
+        </div>
+      
+    
+      
+        <div id="card2" class="card relative">
+          <div class="title flex flex-col items-center justify-center my-4 text-center pb-4">
+            <h2 class="text-xl">OUR MUSIC</h2>
+            <h2 class="text-2xl font-semibold">LIVE LYRIC AND</h2>
+            <h2 class="text-2xl -mt-2 font-semibold">BUSKING VIDEOS</h2>
+          </div>
+          <div id="img1" class="img h-96 w-[300px] bg-cover absolute -left-[30%]" style="background-image: url('./Assets/card2.png');"></div>
+          <div id="img2" class="img h-96 w-[300px] bg-cover absolute -left-[30%]" style="background-image: url('./Assets/card2b.png');"></div>
+          <div id="img3" class="img h-96 w-[300px] bg-cover absolute -left-[30%]" style="background-image: url('./Assets/card2c.png');"></div>
+          <div class="img h-96 w-[300px] bg-cover absolute -left-[30%]" style="background-image: url('./Assets/card2.png');"></div>
+        </div>
+     
+    
+      
+        <div id="card3" class="card relative">
+          <div class="title flex flex-col items-center justify-center my-4 text-center pb-4">
+            <h2 class="text-xl">FOR BUSKERS</h2>
+            <h2 class="text-2xl font-semibold">TIPS FOR SUCCESSFUL</h2>
+            <h2 class="text-2xl -mt-2 font-semibold">BUSKING</h2>
+          </div>
+          <div id="img1" class="img h-96 w-[300px] bg-cover absolute -left-[20%]" style="background-image: url('./Assets/card3.png');"></div>
+          <div id="img2" class="img h-96 w-[300px] bg-cover absolute -left-[20%]" style="background-image: url('./Assets/card3b.png');"></div>
+          <div id="img3" class="img h-96 w-[300px] bg-cover absolute -left-[20%]" style="background-image: url('./Assets/card3c.png');"></div>
+          <div class="img h-96 w-[300px] bg-cover absolute -left-[20%]" style="background-image: url('./Assets/card3.png');"></div>
+        </div>
+     
+    </div>
+    
+    <div  data-scroll
+    data-scroll-speed="1.5" class="page6 h-screen w-screen bg-cover relative" style="background-image: url('./Assets/poster.jpg');">
+      <img class="absolute top-[25%] left-[38%] h-12" src="https://cdn.prod.website-files.com/63f5c044aee9c9d252e817cc/642487559ec1b9c947460e3f_nav-logo.svg" alt="">
+    </div>
+    </div>
+
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Locomotive Scroll JS -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

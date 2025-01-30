@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ivypresto+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+ overflow-x: hidden;
+}
+
+#hero-text2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+
+
