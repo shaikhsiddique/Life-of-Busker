@@ -73,6 +73,28 @@ const page1Animation = () => {
   });
 };
 
+const page2Animation = () => {
+  gsap.timeline({ repeat: -1 })
+  .to("#movingText, #video1, #video2, #video3, #video4", {
+    x: "-3000px",
+    duration: 10,
+    ease: "linear"
+  });
+
+function animateVideo(id, delay) {
+  gsap.timeline({ repeat: -1, repeatDelay: 0 })
+    .to(id, { opacity: 1, duration: 2, ease: "power1.inOut", delay: delay })
+    .to(id, { opacity: 0, duration: 2, ease: "power1.inOut", delay: 6 });
+}
+
+animateVideo("#video1", 1);
+animateVideo("#video2", 3);
+animateVideo("#video3", 5);
+animateVideo("#video4", 7);
+
+  
+}
+
 const page3Animation = () =>{
     gsap.from(".page3 div ", {
         y: 120,
@@ -229,6 +251,7 @@ const page5Animation = () => {
 
 
 page1Animation();
+page2Animation();
 page3Animation();
 page4Animation();
 page5Animation();
